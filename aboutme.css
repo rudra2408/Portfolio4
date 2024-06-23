@@ -1,0 +1,267 @@
+/* General Styles */
+body {
+    background-color: rgb(1, 1, 42);
+    font-family: "Poppins", sans-serif;
+    color: aliceblue;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+.rr {
+    background-color: rgb(139, 3, 62);
+    padding: 10px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.ll {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 17.5px;
+    padding: 10px 15px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: rgb(186, 193, 68);
+}
+
+/* Content Box Styling */
+.box1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+    padding: 20px;
+    text-align: center;
+}
+
+.box1 > div {
+    margin: 10px 0;
+}
+
+.styled-image {
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.styled-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transform-style: preserve-3d;
+}
+
+/* Projects Section Styling */
+.projects-section {
+    padding: 50px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.projects-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+/* Projects Container */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-card {
+    background: url('data:image/jpeg;base64,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');
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    margin: 20px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: left;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.774);
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.project-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.project-link {
+    background-color: rgb(211, 112, 185);
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.project-link:hover {
+    background-color: rgb(243, 123, 143);
+}
+
+/* Contact Section Styling */
+.contact-section {
+    padding: 50px;
+    background: url('https://wallpaperaccess.com/full/722732.jpg');
+    border-top: 2px solid rgb(243, 123, 143);
+    color: aliceblue;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    background-color: rgb(211, 112, 185);
+    color: aliceblue;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: rgb(243, 123, 143);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .box1 {
+        padding: 10px;
+    }
+
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        margin: 10px;
+    }
+
+    .contact-form {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ll {
+        font-size: 20px;
+    }
+
+    .nav ul li {
+        margin-left: 10px;
+    }
+
+    .box1 {
+        font-size: 20px;
+    }
+
+    .projects-section h2,
+    .contact-section h2 {
+        font-size: 28px;
+    }
+}
+#about p {
+    margin-bottom: 10px;
+}
+
+.box{
+    border: 2px solid rgb(25, 244, 229);
+    padding: 30px;
+    max-width: 1200px;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgb(173, 0, 0);
+    background: url('https://th.bing.com/th/id/OIP.LrwyFcc62cgw32fuM4Y1UgHaEK?w=269&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7');
+    background-size: cover;
+}
+
+.para {
+    color: rgb(232, 223, 223);
+    font-size: 20px;
+    padding-bottom: 20px;
+    font-family: "Acme", sans-serif;
+    font-style: normal;
+    margin: 0;
+}
+/* aboutme.css */
